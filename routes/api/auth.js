@@ -63,6 +63,9 @@ router.post('/', [
       const payload = {
         user: {
           id: user.id
+        },
+        testPld: {
+          name: "testPayload"
         }
       };
 
@@ -76,17 +79,14 @@ router.post('/', [
         }
       )
 
+      //   console.log(req.testPld);
+
 
     } catch (err) {
       console.error(err.message);
       res.status(500).send('Server error');
 
     }
-
-
-
-
-
 
   });
 
