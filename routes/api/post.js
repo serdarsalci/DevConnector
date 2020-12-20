@@ -258,11 +258,4 @@ router.delete('/comment/:id/:comment_id', auth,
 
 
 
-
-
-
-
-
-
-
 module.exports = router;
