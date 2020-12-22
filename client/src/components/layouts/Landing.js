@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Landing = ({ isAuthenticated }) => {
 	if (isAuthenticated) {
-		//	return <Redirect to='/dashboard' />;
+		return <Redirect to='/dashboard' />;
 	}
 	return (
 		<section className='landing'>
@@ -17,18 +17,16 @@ const Landing = ({ isAuthenticated }) => {
 						other developers
 					</p>
 
-					{!isAuthenticated && (
-						<Fragment>
-							<div className='buttons'>
-								<Link to='/register' className='btn btn-primary'>
-									Sign Up
-								</Link>
-								<Link to='/login' className='btn btn-light'>
-									Login
-								</Link>
-							</div>
-						</Fragment>
-					)}
+					<Fragment>
+						<div className='buttons'>
+							<Link to='/register' className='btn btn-primary'>
+								Sign Up
+							</Link>
+							<Link to='/login' className='btn btn-light'>
+								Login
+							</Link>
+						</div>
+					</Fragment>
 				</div>
 			</div>
 		</section>
