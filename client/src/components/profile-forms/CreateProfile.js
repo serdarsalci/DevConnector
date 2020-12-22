@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-// import { createProfile } from '../../actions/profile';
+import { Link, withRouter } from 'react-router-dom';
+import { createProfile } from '../../actions/profile';
 
-const CreateProfile = () => {
+const CreateProfile = ({ createProfile, history }) => {
 	const [formData, setFormData] = useState({
 		// these are default values and fields
 		company: '',
@@ -37,14 +38,14 @@ const CreateProfile = () => {
 		linkedin,
 	} = formData;
 
-	//const history = useHistory();
+	//	const history = useHistory();
 
 	const onChange = (e) =>
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		//		createProfile(formData);
+		createProfile(formData, history);
 	};
 
 	return (
@@ -226,4 +227,4 @@ CreateProfile.propTypes = {
 
 //const mapStateToProps = (state) => ({});
 
-export default connect(null, {})(CreateProfile);
+export default connect(null, { createProfile })(withRouter(CreateProfile));
