@@ -76,7 +76,10 @@ router.post(
 		if (status) profileFields.status = status;
 		if (githubusername) profileFields.githubusername = githubusername;
 		if (skills) {
-			profileFields.skills = skills.split(',').map((skill) => skill.trim());
+			profileFields.skills = skills
+				.split(',')
+				.map(skill => skill.trim())
+				.filter(skill => skill.length > 0);
 		}
 
 		// Build social object
@@ -292,7 +295,7 @@ router.delete('/experience/:exp_id', auth, async (req, res) => {
 
 		// Get the remove index
 		const removeIndex = profile.experience
-			.map((item) => item.id)
+			.map(item => item.id)
 			.indexOf(req.params.exp_id);
 
 		profile.experience.splice(removeIndex, 1);
@@ -323,6 +326,7 @@ router.put(
 	async (req, res) => {
 		const errors = validationResult(req);
 		if (!errors.isEmpty()) {
+			console.log('validation failed');
 			return res.status(400).json({ error: errors.array() });
 		}
 
@@ -425,7 +429,7 @@ router.delete('/education/:edu_id', auth, async (req, res) => {
 
 		// Get the remove index
 		const removeIndex = profile.education
-			.map((item) => item.id)
+			.map(item => item.id)
 			.indexOf(req.params.edu_id);
 
 		profile.education.splice(removeIndex, 1);

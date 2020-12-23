@@ -250,12 +250,16 @@ img {
 .form input[type='password'],
 .form input[type='date'],
 .form select,
-.form textarea {
+.form textarea{
   display: block;
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.5rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form textarea{
 }
 
 .form input[type='submit'],
@@ -574,4 +578,6 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+
+
 }
