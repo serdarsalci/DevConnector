@@ -1,6 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://salci:salci@devconnector.tmawk.mongodb.net/<dbname>?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken",
-  "githubClientId": "373aea9701a7a70f8a66",
-  "githubSecret": "b09dcea0e7a74817d8ed7d1a7d693797542ce2ed"
-}

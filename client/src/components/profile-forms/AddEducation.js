@@ -111,7 +111,7 @@ const AddEducation = ({ addEducation, history }) => {
 						name='description'
 						cols='30'
 						rows='5'
-						placeholder='Job Description'
+						placeholder='Study description'
 						value={description}
 						onChange={e => onChange(e)}></textarea>
 				</div>
