@@ -138,6 +138,18 @@ img {
   transition: opacity 0.2s ease-in;
   outline: none;
 }
+.btny {
+  display: block;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+
 
 .badge {
   font-size: 0.8rem;
@@ -577,6 +589,28 @@ button {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
+  }
+
+  .mb{
+    margin-bottom: 0.5rem;
+  }
+  .mb-1{
+    margin-bottom: 1rem;
+  }
+  .mb-2{
+    margin-bottom: 2rem;
+  }
+  .mb-3{
+    margin-bottom: 3rem;
+  }
+  .mt{
+    margin-top: 0.5rem;
+  }
+  .mt-1{
+    margin-top: 1rem;
+  }
+  .mt-2{
+    margin-top: 2rem;
   }
 
 

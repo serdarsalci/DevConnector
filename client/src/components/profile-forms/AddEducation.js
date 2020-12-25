@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addEducation } from '../../actions/profile';
+import { Link } from 'react-router-dom';
 
 const AddEducation = ({ addEducation, history }) => {
 	const [formData, setFormData] = useState({
@@ -92,7 +93,7 @@ const AddEducation = ({ addEducation, history }) => {
 								toogleDisabled(!toDateDisabled);
 							}}
 						/>{' '}
-						Current Job
+						Current School
 					</p>
 				</div>
 				<div class='form-group'>
@@ -115,9 +116,9 @@ const AddEducation = ({ addEducation, history }) => {
 						onChange={e => onChange(e)}></textarea>
 				</div>
 				<input type='submit' class='btn btn-primary my-1' />
-				<a class='btn btn-light my-1' href='dashboard.html'>
+				<Link className='btn btn-light my-1' to='/dashboard'>
 					Go Back
-				</a>
+				</Link>
 			</form>
 		</Fragment>
 	);
