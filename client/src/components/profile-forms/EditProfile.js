@@ -48,7 +48,7 @@ const EditProfile = ({
 			youtube: loading || !profile.social ? '' : profile.social.youtube,
 			instagram: loading || !profile.social ? '' : profile.social.instagram,
 		});
-	}, [loading]);
+	}, [getCurrentProfile, loading]);
 
 	const {
 		company,
@@ -136,6 +136,7 @@ const EditProfile = ({
 						City & state suggested (eg. Boston, MA)
 					</small>
 				</div>
+
 				<div className='form-group'>
 					<input
 						type='text'

@@ -4,11 +4,12 @@ import { connect } from 'react-redux';
 import Spinner from '../layouts/Spinner';
 import ProfileItem from './ProfieItem';
 import { getProfiles } from '../../actions/profile';
+import { Link } from 'react-router-dom';
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 	useEffect(() => {
 		getProfiles();
-	}, []);
+	}, [getProfiles]);
 
 	return (
 		<Fragment>
@@ -30,6 +31,9 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 							<h4>no profile found</h4>
 						)}
 					</div>
+					{/* <Link to='testLink' className='btn btn-success'>
+						test link
+					</Link> */}
 				</Fragment>
 			)}
 		</Fragment>
