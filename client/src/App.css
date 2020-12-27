@@ -100,6 +100,28 @@ img {
   padding: 3rem 0;
 }
 
+.mh-1{
+  margin: 0 1rem;
+}
+.mh{
+  margin: 0 0.5rem;
+}
+
+.m-p-h{
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+}
+.m-p-h2{
+  margin: 0 2rem;
+  padding: 0 2rem;
+}
+.m-p-h1{
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+
+
+
 /* Margin */
 .m {
   margin: 0.5rem;
@@ -130,7 +152,7 @@ img {
   display: inline-block;
   background: var(--light-color);
   color: #333;
-  padding: 0.4rem 1.3rem;
+  padding: 0.4rem 1.2rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -147,6 +169,7 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  width: 15rem;
 }
 
 
@@ -612,6 +635,30 @@ button {
   .mt-2{
     margin-top: 2rem;
   }
+
+  .ml{
+    margin-left: 0.5rem;
+  }
+  .ml-1{
+    margin-left: 1rem;
+  }
+  .ml-2{
+    margin-left: 2rem;
+  }
+  .ml-3{
+    margin-left: 3rem;
+  }
+  .mt{
+    margin-top: 0.5rem;
+  }
+  .mt-1{
+    margin-top: 1rem;
+  }
+  .mt-2{
+    margin-top: 2rem;
+  }
+
+
 
 
 }
