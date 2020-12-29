@@ -23,7 +23,11 @@ const Profile = ({
 	return (
 		<Fragment>
 			{profile === null || loading ? (
-				<Spinner />
+				profile === null ? (
+					<Fragment>This user does not have a profile</Fragment>
+				) : (
+					<Spinner />
+				)
 			) : (
 				<Fragment>
 					<Link to='/profiles' className='btn btn-light'>

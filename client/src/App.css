@@ -107,6 +107,19 @@ img {
   margin: 0 0.5rem;
 }
 
+.mv{
+  margin: 0.5rem 0;
+}
+.mv-2{
+  margin: 2rem 0;
+}
+.mv-1{
+  margin: 1rem 0;
+}
+
+
+
+
 .m-p-h{
   margin: 0 0.5rem;
   padding: 0 0.5rem;

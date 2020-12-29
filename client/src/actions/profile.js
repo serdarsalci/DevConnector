@@ -40,6 +40,7 @@ export const getProfiles = () => async dispatch => {
 			type: GET_PROFILES,
 			payload: res.data,
 		});
+		console.log('getProfiles called');
 	} catch (err) {
 		console.log(err.response.statusText);
 		dispatch({
