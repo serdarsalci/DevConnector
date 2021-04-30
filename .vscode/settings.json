@@ -1,0 +1,6 @@
+{
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": true,
+	"editor.fontSize": 15,
+	"prettier.semi": true
+}

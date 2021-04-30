@@ -34,7 +34,6 @@ const Experience = ({ experience, deleteExperience }) => {
 			<h2 className='my-2'>Experience Credentials</h2>
 			{experience.length > 0 ? (
 				<Fragment>
-					{' '}
 					<table className='table'>
 						<thead>
 							<tr>
@@ -47,11 +46,9 @@ const Experience = ({ experience, deleteExperience }) => {
 						<tbody>{experiences}</tbody>
 					</table>
 				</Fragment>
-			) : (
-				<div className='text-dark p-1'>You dont have work experience</div>
-			)}
-			<Link to='/add-experience' class='btn btn-light'>
-				<div className='text-primary'>Click to add a work experience</div>
+			) : null}
+			<Link to='/add-experience' class='btn btn-primary'>
+				Click to add a work experience
 				{/* <i class='fab fa-black-tie text-primary'></i> Add Experience */}
 			</Link>
 		</Fragment>

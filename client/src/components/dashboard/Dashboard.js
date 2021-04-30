@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import DashboardActions from './DashboardActions';
 import Experience from './Experience';
 import Education from './Education';
+import Alert from '../layouts/Alert';
 
 const Dashboard = ({
 	getCurrentProfile,
@@ -22,7 +23,7 @@ const Dashboard = ({
 		<Spinner />
 	) : (
 		<Fragment>
-			<h1 className='large text-primary'>Dashboard</h1>
+			<span className='large text-primary'>Wellcome </span>{' '}
 			<p className='lead'>
 				<i className='fas fa-user'></i> Welcome {user && user.name}
 			</p>
